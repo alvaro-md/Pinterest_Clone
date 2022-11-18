@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body{
+    background-color: #eeeeee;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+}
+i, a{
+    text-decoration: none;
+    color: black;
+}
+#nav-pinterest{
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    width: 100%;
+}
+#pin-logo a img{
+    max-width: 32px;
+}
+.left #home a{
+    margin: 0 15px;
+    border-radius: 1.9rem;
+    padding: 15px 20px;
+    background-color: #0a0a0a;
+    font-size: 1.2rem;
+    color: #eee;
+}
+#create{
+    display: flex;
+}
+.left #create a{
+    /* margin: 0 15px;
+    padding: 15px 20px; */
+    font-size: 1.2rem;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.right a{
+    margin: 0 15px;
+    font-size: 1.8rem;
+}
+.search{
+    width: 70%;
+    align-self: center;
+    
+}
+.search input{
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ddd;
+    font-size: 1.2rem;
+
+}
+#content{    
+    /* padding: 100px 10% 0 10%; */
+    /* columns: auto 5;
+    column-gap: 1.5rem; */
+    width: 100%;
+    padding: 0 5rem;
+    columns: 200px 5;
+    padding-top: 100px;
+}
+
+
+/* d */
+.container{
+    /* width: 30%; */
+    /* margin: 10px; */
+    margin: 1rem 0;
+    position: relative;
+}
+.card_image{
+    max-width: 100%;
+    border-radius: 1.5rem;
+    display: block;
+}
+.overlay{
+    background-color: rgba(0,0,0,.4);
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    opacity: 0;
+
+}
+.overlay:hover {
+    opacity: 1;
+}
+.top_b{
+    position: relative;
+    margin: 1.5em;
+}
+.top_b a{
+    color: #ddd;
+    background-color: rgb(206, 67, 67);
+    margin-top: 50px;
+    padding: .5em 1.5em;
+    border-radius: 1.4em;
+    font-size: 1.3em;
+}
+.btm_b {
+    /* background-color: rgb(0,0,0,.5); */
+    width: 100%;
+    position: relative;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+.bottom_icon{
+    align-items: flex-end;
+    margin: 10px;
+    /* padding-bottom: 10px; */
+    position: relative;
+    background-color: #eee;
+    /* width: 2rem; */
+    /* height: 2rem; */
+    width: auto;
+    height: auto;
+    padding: .6em 1em ;
+    text-align: center;
+    border-radius: 50%;
+}
+/* .bottom_icon{
+    position: absolute;
+} */
+
+@media screen and (max-device-width: 600px){
+    .search{
+        display: none;
+    }
+    #create{
+        display: none;
+    }
+    #notifications{
+        display: none;
+    }
+    #message{
+        display: none;
+    }
+    .left #home a{
+        margin: 0 15px;
+        border-radius: 1.9rem;
+        padding: 10px 15px;
+        background-color: #0a0a0a;
+        font-size: 1.2rem;
+        color: #eee;
+    }
+    #nav-pinterest{
+        background-color: #eeeeee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    #pin-logo a img{
+        max-width: 40px;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+    }
+    .right a{
+        /* margin: 0 15px; */
+        font-size: 1.8rem;
+    }
+}
